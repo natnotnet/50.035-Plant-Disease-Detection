@@ -3,37 +3,36 @@ from process_image import classification_preprocess
 
 def predict_disease(image, model, device):
     disease_to_idx = {
-        "healthy": 0,
-        "Haunglongbing_(Citrus_greening)": 1,
-        "Bacterial_spot": 2,
-        "Tomato_Yellow_Leaf_Curl_Virus": 3,
-        "Late_blight": 4,
-        "Powdery_mildew": 5,
+        "Apple_scab": 0,
+        "Bacterial_spot": 1,
+        "Black_rot": 2,
+        "Cedar_apple_rust": 3,
+        "Cercospora_leaf_spot Gray_leaf_spot": 4,
+        "Common_rust": 5,
         "Early_blight": 6,
-        "Black_rot": 7,
-        "Septoria_leaf_spot": 8,
-        "Spider_mites Two-spotted_spider_mite": 9,
-        "Target_Spot": 10,
-        "Esca_(Black_Measles)": 11,
-        "Common_rust": 12,
-        "Leaf_scorch": 13,
-        "Leaf_blight_(Isariopsis_Leaf_Spot)": 14,
-        "Northern_Leaf_Blight": 15,
-        "Leaf_Mold": 16,
-        "Apple_scab": 17,
-        "Cercospora_leaf_spot Gray_leaf_spot": 18,
+        "Esca_(Black_Measles)": 7,
+        "Haunglongbing_(Citrus_greening)": 8,
+        "Late_blight": 9,
+        "Leaf_Mold": 10,
+        "Leaf_blight_(Isariopsis_Leaf_Spot)": 11,
+        "Leaf_scorch": 12,
+        "Northern_Leaf_Blight": 13,
+        "Powdery_mildew": 14,
+        "Septoria_leaf_spot": 15,
+        "Spider_mites Two-spotted_spider_mite": 16,
+        "Target_Spot": 17,
+        "Tomato_Yellow_Leaf_Curl_Virus": 18,
         "Tomato_mosaic_virus": 19,
-        "Cedar_apple_rust": 20,
+        "healthy": 20,
     }
+
     idx_to_disease = {v: k for k, v in disease_to_idx.items()}
     
     input_tensor = classification_preprocess(image).unsqueeze(0)  # Add batch dimension
-
     model = model.to(device)
     input_tensor = input_tensor.to(device)
 
     # Predict the disease
-    # model.eval()  # Set the model to evaluation mode
     with torch.no_grad():
         logits = model(input_tensor)  # Forward pass
 
