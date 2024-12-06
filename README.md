@@ -2,25 +2,23 @@
 ## Introduction
 This folder contains all the relevant files for our Plant Disease Detection project, as well as the runnable source code for our prototype. 
 
-Refer to this video for a quick demonstration of the prototype:
-
-
-## Datasets and Models used
+## Datasets and Models (to be updated)
 **Image Classification**: 
 EfficientNetB0, ShuffleNet v2, ... were trained on the [PlantVillage dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset).
 
 **Image Segmentation**:
 UNet, UNet++ and DeepLabV3 were trained on the [Leaf segmentation dataset](https://www.kaggle.com/datasets/fakhrealam9537/leaf-disease-segmentation-dataset).
 
-## Folder contents
+## Contents (to be updated)
+- `user_interface`: runnable source code for prototype
 - `notebooks/Data_preparation.ipynb`: All data pre-processing steps for the *PlantVillage* dataset.
 - 
 - 
 
 
-## Instructions to run prototype code
+## Instructions to run prototype code 
 ### 1. Downloading folder
-Download the **user_interface** folder in this repository to your local storage, and navigate to its directory (e.g. `cd Downloads/user_interface`).
+Download the **user_interface** folder from this repository to your local storage, and navigate to its directory (e.g. `cd Downloads/user_interface`).
 
 
 ### 2. Creating a virtual environment
@@ -48,8 +46,10 @@ Install all required libraries and dependencies within the environment.
 pip install -r requirements.txt
 ```
 
+### 4. Downloading our models (to be updated)
+Download our trained models from (google drive link) and insert them into the `models` folder.
 
-### 4. Running the webpage
+### 5. Running the webpage
 Run the following command to start the Streamlit app.
 ```
 streamlit run Frontend.py
