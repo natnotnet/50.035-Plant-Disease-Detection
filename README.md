@@ -52,6 +52,6 @@ Download our trained models from (google drive link) and insert them into the `m
 ### 5. Running the webpage
 Run the following command to start the Streamlit app.
 ```
-streamlit run Frontend.py
+streamlit run app.py
 ```
 If the execution is successful, you should be automatically directed to the running application on your default web browser 👍
