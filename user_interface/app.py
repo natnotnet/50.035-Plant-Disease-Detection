@@ -14,10 +14,10 @@ from classification import predict_disease
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 ## Load the models ##
-ep_ = torch.export.load('models/export_ShuffleNetV2.pt2')
+ep_ = torch.export.load('models/export_Custom_classification.pt2')
 classifier = ep_.module()
 
-ep = torch.export.load('models/export_Unet.pt2')
+ep = torch.export.load('models/export_DeepLabV3.pt2')
 segment_model = ep.module()
 
 plt.rcParams["savefig.bbox"] = 'tight'
@@ -73,10 +73,7 @@ def main():
             
         # Add a button
         if st.button('Does my plant have a disease?'):
-            ## TODO: Perform classification; display output class. If disease present, perform segmentation 
-            # predicted_disease = 'apple scab'
-            # # predicted_disease = 'healthy'
-            
+            ## Perform classification; display output class. If disease present, perform segmentation 
             predicted_disease = predict_disease(processed_image, classifier, device).replace('_', ' ')
             
             if predicted_disease == 'healthy':
