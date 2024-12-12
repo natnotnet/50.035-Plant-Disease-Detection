@@ -2,7 +2,7 @@
 ## Introduction
 This folder contains all the relevant files for our Plant Disease Detection project, as well as the runnable source code for our prototype. 
 
-## Datasets and Models (to be updated)
+## Datasets and Models
 ### Image Classification
 
 *SqueezeNet, ResNet50, MobileNetV2, ShuffleNetv2, EfficientNetB0, InceptionV3* and a *custom model* were trained on the [PlantVillage dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset).
@@ -49,8 +49,8 @@ Install all required libraries and dependencies within the environment.
 pip install -r requirements.txt
 ```
 
-### 4. Downloading our models (to be updated)
-Download our trained models from (google drive link) and insert them into the `models` folder.
+### 4. Downloading our models
+Download both of our trained models [here](https://drive.google.com/drive/folders/1k90o_kAQgsH8aOfjuPaBN3Q0N4QlntUN?usp=sharing), and insert them into the `models` folder.
 
 ### 5. Running the webpage
 Run the following command to start the Streamlit app.
