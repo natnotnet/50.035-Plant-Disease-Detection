@@ -3,13 +3,16 @@
 This folder contains all the relevant files for our Plant Disease Detection project, as well as the runnable source code for our prototype. 
 
 ## Datasets and Models (to be updated)
-**Image Classification**: 
-EfficientNetB0, ShuffleNet v2, ... were trained on the [PlantVillage dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset).
+### Image Classification
 
-**Image Segmentation**:
-UNet, UNet++ and DeepLabV3 were trained on the [Leaf segmentation dataset](https://www.kaggle.com/datasets/fakhrealam9537/leaf-disease-segmentation-dataset).
+*SqueezeNet, ResNet50, MobileNetV2, ShuffleNetv2, EfficientNetB0, InceptionV3* and a *custom model* were trained on the [PlantVillage dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset).
+
+### Image Segmentation
+
+*UNet, UNet++, DeepLabV3 (with ResNet50), DeepLabV3 (with MobileNetv2)* and *MAnet* were trained on the [Leaf segmentation dataset](https://www.kaggle.com/datasets/fakhrealam9537/leaf-disease-segmentation-dataset).
 
 ## Contents (to be updated)
+- `prototype demo.mp4`: a short demo video of our running prototype
 - `user_interface`: runnable source code for prototype
 - `notebooks/Data_preparation.ipynb`: All data pre-processing steps for the *PlantVillage* dataset.
 - 
