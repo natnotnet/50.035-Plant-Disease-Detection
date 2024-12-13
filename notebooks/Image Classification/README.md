@@ -1,4 +1,4 @@
-**Models Tested: **
+**Models Tested:**
 Our study evaluated multiple state-of-the-art convolutional neural network architectures to determine the optimal model for our classification task. The following architectures were investigated:
 1. SqueezeNet: A compact architecture achieving AlexNet-level accuracy with significantly fewer parameters through its fire module design, combining squeeze and expand layers for efficient model size reduction.
 2. ResNet50: A deep residual network employing residual connections through 50 convolutional layers to address the vanishing gradient problem and enable effective training of deep architectures through identity mappings.4
