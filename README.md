@@ -11,12 +11,13 @@ This folder contains all the relevant files for our Plant Disease Detection proj
 
 *UNet, UNet++, DeepLabV3 (with ResNet50), DeepLabV3 (with MobileNetv2)* and *MAnet* were trained on the [Leaf segmentation dataset](https://www.kaggle.com/datasets/fakhrealam9537/leaf-disease-segmentation-dataset).
 
-## Contents (to be updated)
-- `prototype demo.mp4`: a short demo video of our running prototype
-- `user_interface`: runnable source code for prototype
+## Contents
+- `prototype demo.mp4`: A short demo video of our running prototype
+- `user_interface`: Runnable source code for prototype
 - `notebooks/Data_preparation.ipynb`: All data pre-processing steps for the *PlantVillage* dataset.
-- 
-- 
+- `notebooks/Image Classification`: Folder containing all notebooks pertaining to image classification
+- `notebooks/Image Segmentation`: Folder containing all notebooks pertaining to image segmentation
+- `report`: Our final project report
 
 
 ## Instructions to run prototype code 
@@ -50,7 +51,7 @@ pip install -r requirements.txt
 ```
 
 ### 4. Downloading our models
-Download both of our trained models [here](https://drive.google.com/drive/folders/1k90o_kAQgsH8aOfjuPaBN3Q0N4QlntUN?usp=sharing), and insert them into the `models` folder.
+Download [this folder](https://drive.google.com/drive/folders/1k90o_kAQgsH8aOfjuPaBN3Q0N4QlntUN?usp=sharing) that contains our trained models, and insert it into the folder.
 
 ### 5. Running the webpage
 Run the following command to start the Streamlit app.
